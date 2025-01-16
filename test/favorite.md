@@ -1,10 +1,9 @@
 ## Favorite Things ##
 
-These are my favorite things! 
-    + cats 
-    + especially my cat, Kirby
+- These are my favorite things!
+    + Kriby (my cat)
+    + cats in general
     + nct
-    + the color green
+    + listening to music
     + care bears
     + snoopy
-    + listening to music
