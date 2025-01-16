@@ -2,10 +2,16 @@
 
 These are my **favorite** things!
 
+- Animals
     + Kriby (my cat)
-    + cats in general
-    + nct
-    + listening to music
-    + care bears
-    + snoopy
-    + my friends and family! 
+    + Cats in general
+    + Red pandas
+    + Harbor seals
+- Music
+    + NCT
+    + Malcolm Todd
+    + Clario 
+- Characters
+    + Care bears
+    + Snoopy
+    + Smiskis
