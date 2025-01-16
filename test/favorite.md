@@ -3,7 +3,7 @@
 These are my **favorite** things!
 
 - Animals
-    + Kriby (my cat)
+    + Kirby (my cat)
     + Cats in general
     + Red pandas
     + Harbor seals
