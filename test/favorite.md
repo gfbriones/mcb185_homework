@@ -4,7 +4,7 @@ These are my **favorite** things!
 
 - Animals
     + Kirby (my cat)
-    + Cats in general
+    + Cats
     + Red pandas
     + Harbor seals
 - Music
