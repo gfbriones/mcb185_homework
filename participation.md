@@ -38,6 +38,7 @@ more than one point per category. There is a maximum of 5 points each week.
 	+ helped Anita K. with some commands and shortcuts
 	+ attended class Thursday
 	+ I met Britney on Thursday
+	+ Total: 5 pts
 - Week 3
 - Week 4
 - Week 5
