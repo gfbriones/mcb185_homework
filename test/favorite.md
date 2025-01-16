@@ -1,4 +1,6 @@
 ## Favorite Things ##
+
+These are my favorite things! 
     + cats 
     + especially my cat, Kirby
     + nct
@@ -6,4 +8,3 @@
     + care bears
     + snoopy
     + listening to music
-    + 
