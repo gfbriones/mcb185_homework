@@ -40,7 +40,17 @@ more than one point per category. There is a maximum of 5 points each week.
 	+ I met Britney on Thursday
 	+ Total: 5 pts
 - Week 3
+	+ attended class Tuesday
+	+ introduced to Cordelia
+	+ did the assessment Wednesday evening
+	+ attended class Thursday
+	+ other: accidently joined your Zoom on Sunday but still asked an question 
+	+ Total: 5 pts.
 - Week 4
+	+ attended class Tuesday
+	+ attended class Thursday
+	+ asked a question during Thursday class
+	+ Total: 3 pts. 
 - Week 5
 - Week 6
 - Week 7
