@@ -190,27 +190,54 @@ print(max3(5,6,44))
 # Given values for true positives, false positives, true negatives, and false negatives
 # write functions that return sensitivity, specificity, and F1 score
 
-def stat(tp, fp, tn, fn):
-    sen = tp / (tp + fn)
-    spec = tn / (tn + fp)
-    f1 = tp / (tp + ((1/2) * (fp + fn)))
-    return f"Sensitivity is {sen}\nSpecificity is {spec}\nF1 score is {f1}"
-print (stat(4, 6, 2, 8))
+def stat(tp, fp, tn, fn): 
+    def sen(tp, fn):
+        if tp + fn == 0: return 0
+        return tp / (tp + fn)
+
+    def spec(tn, fp):
+        if tn + fp == 0: return 0
+        return tn / (tn + fp)
+
+    def f1(tp, fp, fn):
+        if tp + fp + fn == 0: return 0
+        return tp / (tp + ((1/2) * (fp + fn)))
+    print ((sen(tp, fn)), spec(tn, fp), f1(tp, fp, fn))
+print(stat(4,5,3,8))
 
 # Write a function that returns the Shannon entropy for nucleotide counts A, C, G, T. 
 # It should work even in the case where there are zero counts for one or more letters.
 
 def shannon(a, c, g, t):
-    counts = [a, c, g, t]
     total = a + c + g + t
     if total == 0: return 0
 
-    hx = 0
-    for count in counts:
-         if count > 0:
-              prob = count / total 
-              message = -math.log2(prob)
-              hx += prob * message
-    return hx 
-print(shannon(4, 5, 2, 6))
+    if a > 0: 
+        a_prob = a / total
+        a_entropy = a_prob * (-math.log2(a_prob))
+    if a_entropy == 0: return 0
+    if c > 0:
+        c_prob = c / total
+        c_entropy = c_prob * (-math.log2(c_prob))
+    if c_entropy == 0: return 0
+    if g > 0: 
+        g_prob = g / total
+        g_entropy = g_prob * (-math.log2(g_prob))
+    if g_entropy == 0: return 0
+    if t > 0:
+        t_prob = t / total
+        t_entropy = t_prob * (-math.log2(t_prob))
+    if t_entropy == 0: return 0
+
+    total_entropy = a_entropy + c_entropy + g_entropy + t_entropy
+    return total_entropy
+print(shannon(5, 4, 2, 6))
+
+    
+
+
+    
+
+
+
    
