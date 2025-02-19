@@ -108,7 +108,7 @@ else:       print('a == b')
 
 if a < b: print('a < b')
 elif a <= b: print ('a <= b')
-elif a == b: print ('this will never be printed!') # will execute ln 112 bcs it will be true
+elif a == b: print ('this will never be printed!') # will execute ln 110 bcs it will be true
 
 if a < b or a > b: print('all things are equal, a and b are not')
 if a < b and a > b: print('you are living in a strange world')
@@ -139,7 +139,7 @@ s = 'G'
 def silly(m, x, b):
     y = m * x + b
 print(silly(2, 3, 4))
-
+                                                                                                                                                          
 # write a function that determines if a number is an integer
 def is_integer(a): 
     if a % 1 == 0: return True
@@ -190,19 +190,21 @@ print(max3(5,6,44))
 # Given values for true positives, false positives, true negatives, and false negatives
 # write functions that return sensitivity, specificity, and F1 score
 
+def sen(tp, fn):
+    if tp + fn == 0: return 0
+    return tp / (tp + fn)
+
+def spec(tn, fp):
+    if tn + fp == 0: return 0
+    return tn / (tn + fp)
+
+def f1(tp, fp, fn):
+    if tp + fp + fn == 0: return 0
+    return tp / (tp + ((1/2) * (fp + fn)))
+
 def stat(tp, fp, tn, fn): 
-    def sen(tp, fn):
-        if tp + fn == 0: return 0
-        return tp / (tp + fn)
-
-    def spec(tn, fp):
-        if tn + fp == 0: return 0
-        return tn / (tn + fp)
-
-    def f1(tp, fp, fn):
-        if tp + fp + fn == 0: return 0
-        return tp / (tp + ((1/2) * (fp + fn)))
     print ((sen(tp, fn)), spec(tn, fp), f1(tp, fp, fn))
+
 print(stat(4,5,3,8))
 
 # Write a function that returns the Shannon entropy for nucleotide counts A, C, G, T. 
