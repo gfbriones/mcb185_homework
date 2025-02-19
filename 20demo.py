@@ -1,4 +1,4 @@
-""" t = 1, 2 # this is a tuple
+t = 1, 2 # this is a tuple
 print(t)
 print(type(t))
 
@@ -58,7 +58,7 @@ for i in range(len(basket)): # for loop uses range and len() -> returns the numb
 for i in range(7):
     if i % 2 == 0: print(i, 'is even')
     else: print(i, 'is odd')
- """
+ 
 
 ## practice problems
 
@@ -119,9 +119,41 @@ print(is_prime(27))
 # Write a function that estimates Pi (3.14159...) using the Nilakantha series. 
 # Again, choose a finite limit. Pi = 3 + 4/(2x3x4) - 4/(4x5x6) + 4/(6x7x8) - 4/(8x9x10) ...
 
-def nilakantha(n):
+def nilakantha(limit):
     sign = -1
+    pi = 3 
+    for i in range(1, limit + 1):
+        n = 2 * i
+        d = n * (n+1) * (n+2)
+        if i % 2 == 0: pi = pi - 4 / d
+        else:          pi = pi + 4 / d
+    return pi
 
-i = 0 
-for i in range(10):
-    i += 1 
+# monty pi-thon 
+
+import random
+
+x = random.random()
+y = random.random()
+
+print(x, y)
+
+dis = (x ** 2 + y ** 2) ** (0.5) 
+
+in_circle = dis <= 1
+
+pi_appr = 0
+ins = 0 
+out = 0
+
+
+while True: 
+    x = random.random()
+    y = random.random()
+    dis = (x ** 2 + y ** 2) ** (0.5)
+    in_circle = dis <= 1
+    if in_circle: 
+        ins += 1
+    else: out += 1
+    pi_appr = ins / (ins + out) * 4
+    print(pi_appr)
