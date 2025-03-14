@@ -90,5 +90,5 @@ more than one point per category. There is a maximum of 5 points each week.
 	+ attended class Tuesday
 	+ did unit 4 written assesment during Tuesday class
 	+ asked Lilith about variable define error during Tuesday class 
-	+ attended class Thursday 
+	+ joined Alex's codeire on Thrusday night
 	+ Total: 5 pts.
